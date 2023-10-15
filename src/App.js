@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
+import Experiences from "./components/Experience.js";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
@@ -13,7 +14,7 @@ export default function App() {
       <About />
       <Projects />
       <Skills />
-      <Testimonials />
+      <Experiences />
       <Contact />
     </main>
   );

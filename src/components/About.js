@@ -1,6 +1,8 @@
 
 // src/components/About.js
 import React from "react";
+import Typed from "react-typed";
+import 'react-typed/dist/animatedCursor.css';
 
 export default function About() {
   return (
@@ -8,14 +10,26 @@ export default function About() {
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Reed.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            apps.
+          <h2>Hi, I'm <span className="bg-gray-700">Pranamika Pandey.</span></h2>
+          <br className="hidden lg:inline-block" />
+          <h5>A &nbsp;          
+            <Typed
+                    strings={['Developer',
+                    'Open Source Enthusiast',
+                    'Problem Solver',
+                    'Quick Learner']}
+                    typeSpeed={60}
+                    backSpeed={120}
+                    attr="placeholder"
+                    loop
+                >
+                     <input className="border-transparent focus:border-transparent bg-transparent text-white" type="text"></input>
+                </Typed>
+                </h5>
+           
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            Software developer and open source enthusiast working with cutting-edge technology to solve real-world problems
           </p>
           <div className="flex justify-center">
             <a
